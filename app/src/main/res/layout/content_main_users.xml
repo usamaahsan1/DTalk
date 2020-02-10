@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/White"
+    android:weightSum="6">
+ <android.support.v4.view.ViewPager
+     android:id="@+id/pagerMain"
+     android:layout_weight="5.4"
+     android:layout_width="match_parent"
+     android:layout_height="0dp">
+ </android.support.v4.view.ViewPager>
+ <View
+     android:layout_width="match_parent"
+     android:layout_height="0dp"
+     android:background="@color/White"
+     android:layout_weight=".6"/>
+
+</LinearLayout>

@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#32c99aff"
+    android:paddingBottom="0dp"
+    tools:context="com.androidcave.dtalk.ConversationActivity">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerConversation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/linNewMsg"
+        android:stackFromBottom="true"
+        android:transcriptMode="alwaysScroll">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:id="@+id/linNewMsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="3dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp">
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="0dp" />
+
+        <ImageButton
+            android:id="@+id/btnCam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:padding="0dp"
+            app:srcCompat="@drawable/ic_photo_camera_black_24dp" />
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="0dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:elevation="-8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/login_input"
+                android:orientation="horizontal"
+                android:padding="8dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:weightSum="10">
+
+                <EditText
+                    android:id="@+id/edTypeMessage"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="9.8"
+                    android:background="@null"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical"
+                    android:hint="Text Message"
+                    android:padding="0dp" />
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/btnSendMessage"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="end|bottom"
+                    android:layout_weight="0.2"
+                    app:srcCompat="@drawable/ic_arrow_upward"
+                    android:elevation="0dp"
+                    app:borderWidth="0dp"
+                    app:fabSize="mini" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="12dp"
+            android:layout_height="0dp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

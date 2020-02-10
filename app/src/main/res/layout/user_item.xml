@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#f9f8f8"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="2dp"
+        android:elevation="1dp"
+        android:layout_margin="0.5dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/list_item_ripple_click"
+            android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="6"
+        android:orientation="horizontal">
+     <LinearLayout
+         android:layout_width="0dp"
+         android:layout_height="wrap_content"
+         android:layout_weight="1.5"
+         android:gravity="center"
+         android:orientation="vertical">
+
+         <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content">
+         <de.hdodenhof.circleimageview.CircleImageView
+             android:id="@+id/UserProfileImage"
+             android:layout_width="60dp"
+             android:layout_height="70dp"
+             android:layout_gravity="center"
+             app:layout_anchorGravity="right"
+             app:layout_anchor="@id/NewMessages"
+             android:src="@drawable/pro"/>
+         <TextView
+             android:id="@+id/NewMessages"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="1"
+             android:gravity="right"
+             android:paddingLeft="5dp"
+             android:paddingRight="5dp"
+             android:textSize="13sp"
+             android:textColor="@color/White"
+             android:background="@drawable/profile_img_selector"/>
+
+
+         </android.support.design.widget.CoordinatorLayout>
+
+     </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3.5"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"/>
+            <TextView
+                android:id="@+id/UserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vinda Folson"
+                android:textColor="@color/darkGray"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif"
+                android:textStyle="bold"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="7dp"/>
+            <TextView
+                android:id="@+id/UserLastMsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hello! how are you?"
+                android:drawablePadding="5dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="12sp"
+                android:fontFamily="sans-serif" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"/>
+            <TextView
+                android:id="@+id/UserLastTimeDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="16:00"
+                android:layout_gravity="center"
+                android:textColor="@color/colorAccent"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="95dp"
+        android:background="#673AB7"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

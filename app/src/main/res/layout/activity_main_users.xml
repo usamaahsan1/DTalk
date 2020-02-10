@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#bccec9"
+    android:orientation="vertical"
+    tools:context=".MainUsersActivity">
+
+    <include layout="@layout/content_main_users"/>
+
+        <android.support.design.widget.CoordinatorLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.design.bottomappbar.BottomAppBar
+            android:id="@+id/bottomAppBar"
+            android:elevation="11dp"
+            android:fadingEdge="horizontal"
+            android:fadingEdgeLength="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:layout_gravity="bottom"
+            app:backgroundTint="@color/darkGray"
+            app:buttonGravity="bottom|top"
+            app:fabAlignmentMode="end" >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3">
+            <android.support.design.widget.TabLayout
+                android:id="@+id/TabsMainUsers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:tabIndicatorHeight="2dp"
+                app:tabIndicatorGravity="top"
+                app:tabGravity="fill"
+                app:tabIndicatorAnimationDuration="5"
+                app:tabTextColor="@color/White"
+                app:tabTextAppearance="@style/TabLayoutTextStyle"
+                app:tabSelectedTextColor="@color/colorAccent"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                app:tabIndicatorFullWidth="true">
+           <android.support.design.widget.TabItem
+               android:id="@+id/TabChat"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Chat"
+               android:outlineSpotShadowColor="@color/White"/>
+                <android.support.design.widget.TabItem
+                    android:id="@+id/TabStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                android:text="Status"
+                    android:outlineSpotShadowColor="@color/White"/>
+              <!--  <android.support.design.widget.TabItem
+                    android:id="@+id/TabCalls"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Calls"
+                    android:outlineSpotShadowColor="@color/White"/> -->
+            </android.support.design.widget.TabLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+
+            </LinearLayout>
+            </LinearLayout>
+        </android.support.design.bottomappbar.BottomAppBar>
+            <android.support.design.widget.FloatingActionButton
+            android:id="@+id/AddNew"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_add_"
+            app:backgroundTint="@color/colorAccent"
+            app:fabSize="normal"
+            app:layout_anchor="@id/bottomAppBar" />
+
+        </android.support.design.widget.CoordinatorLayout>
+    </android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".profile.ProfileActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/background"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:background="@drawable/background_angled">
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/profile_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/background"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="-100dp"
+                android:layout_marginLeft="20dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/ivProfileImage"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/image"
+                    app:civ_border_color="#BCffffff"
+                    app:civ_border_width="10dp"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginBottom="24dp"
+                    android:layout_gravity="bottom">
+
+                    <TextView
+                        android:id="@+id/profileName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+                        android:text="CHANDAN BHANDARI"
+                        android:textSize="18sp"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorAccent"/>
+
+                    <TextView
+                        android:id="@+id/userStatus"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+                        android:text="Deaf/Normal Person"
+                        android:gravity="center_horizontal"
+                        android:textSize="12sp"
+                        android:textColor="@color/darkGray"/>
+                </LinearLayout>
+
+            </LinearLayout>/
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="16dp"
+                android:layout_below="@+id/profile_image"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/profileStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hey there! I am using D-Talk."
+                    android:textColor="@color/colorAccent"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="23dp"
+                    android:text="Personal Information"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="14dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"/>
+
+                <TextView
+                    android:id="@+id/profileEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="babar@gmail.com"
+                    android:drawableLeft="@drawable/ic_mail_black_24dp"
+                    android:textColor="@color/darkGray"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"/>
+
+                <TextView
+                    android:id="@+id/profilePhone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="03048823317"
+                    android:textColor="@color/darkGray"
+                    android:drawableLeft="@drawable/ic_phone_black_24dp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"/>
+
+                <TextView
+                    android:id="@+id/profileAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12 August, 1997"
+                    android:textColor="@color/darkGray"
+                    android:drawableLeft="@drawable/ic_cake_black_24dp"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"/>
+                <Button
+                    android:id="@+id/btnEdtProfile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_background_gradient"
+                    android:textColor="@color/White"
+                    android:text="Edit Profile"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</LinearLayout>

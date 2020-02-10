@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">DTalk</string>
+    <string name="title_activity_main_users">D-Talk</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_chat_fragment">Hello Chat fragment</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_status_fragment">Hello Status fragment</string>
+
+
+    <string name="gender_prompt">Gender</string>
+    <string-array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+    </string-array>
+
+    <string name="country_prompt">Choose a country</string>
+    <string-array name="country">
+        <item>Pakistan</item>
+        <item>China</item>
+        <item>United States</item>
+        <item>Indonesia</item>
+    </string-array>
+
+    <string name="person_prompt">Choose person condition</string>
+    <string name="logout_title">Logout</string>
+    <string-array name="person">
+        <item>Normal</item>
+        <item>Deaf</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="message">Messages</string>
+
+</resources>

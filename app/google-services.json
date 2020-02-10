@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "869696371827",
+    "firebase_url": "https://dtalk-ebed6.firebaseio.com",
+    "project_id": "dtalk-ebed6",
+    "storage_bucket": "dtalk-ebed6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:869696371827:android:ea5a3b478aeb10611e7e06",
+        "android_client_info": {
+          "package_name": "com.androidcave.dtalk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "869696371827-9f69q7mdf68tck33ing0t8momrm8cq8b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.androidcave.dtalk",
+            "certificate_hash": "4adf243944dbdcfcbc1ea2d05b40334fded4f3bb"
+          }
+        },
+        {
+          "client_id": "869696371827-gprago4hbgpkfv663qcpri4muv8qj4j3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAlRCqtsDGyvywG9fRnzmYLAO3ajd-zoWE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "869696371827-gprago4hbgpkfv663qcpri4muv8qj4j3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
