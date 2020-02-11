@@ -1,4 +1,3 @@
-amir zia
 ECLIPSE ANDROID PROJECT IMPORT SUMMARY
 ======================================
 
